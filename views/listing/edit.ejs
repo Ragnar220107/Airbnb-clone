@@ -1,0 +1,39 @@
+<% layout('layouts/boilerplate')%>
+
+    <div class="row">
+            <div class=" col-8 offset-2">
+ <form method="POST" action="/listings/<%= listingdata.id %>?_method=PUT"  enctype="multipart/form-data">
+      <div class="mb-3 ">
+  <label for="exampleFormControlInput1" class="form-label"><b>Title</b></label>
+  <input  class="form-control" id="exampleFormControlInput1" type="text" name="Listing[title]" value="<%= listingdata.title %>" placeholder="Title" required>
+</div>
+ <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label"><b>Description</b></label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50" type="text" name="Listing[description]" placeholder="Description" required><%= listingdata.description %></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput2" class="form-label"><b>Price</b></label>
+  <input  class="form-control" id="exampleFormControlInput2"  type="number" name="Listing[price]" value="<%= listingdata.price %>" placeholder="Price" required>
+</div>
+<div class="row">
+  
+    <div class="mb-3 col-md-4">
+  <label for="exampleFormControlInput3" class="form-label"><b>Location</b></label>
+  <input  class="form-control" id="exampleFormControlInput3" type="text" name="Listing[location]" value="<%= listingdata.location %>" placeholder="Location" required>
+</div>
+<div class="mb-3 col-md-8">
+  <label for="exampleFormControlInput4" class="form-label"><b>Country</b></label>
+  <input class="form-control" id="exampleFormControlInput4" type="text"  name="Listing[country]" value="<%= listingdata.country %>"   placeholder="Country" required>
+</div>
+</div>    
+  <img src="<%= orignalImg %>" alt="listing image" class="img-fluid">
+<div class="mb-3">
+  <label for="exampleFormControlInput5" class="form-label"><b>Image Url</b></label>
+  <input class="form-control" id="exampleFormControlInput5" type="file" name="listing[image]" placeholder="Image URL"  >
+  <div class="invalid-feedback">Upload Image</div>
+</div>
+    <button type="submit" class="btn btn-dark update-btn mb-3">Update Listing</button>   
+ </form>
+    </div>  
+    </div>
+

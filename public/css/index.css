@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding: 0 ;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .container,.flex-grow-1{
+        flex:1 0 auto;
+    }
+.navbar {
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #e5e5e5;
+}
+.fa-compass-drafting{
+color:rgb(246, 51, 51);
+font-size:2rem;
+}
+.nav-link{
+    color:black !important;
+}
+.f-info-socials, .f-info-brand, .f-info{
+display: flex;
+background-color: #cbcbcb;
+align-content: center;
+justify-content: center;
+width:100% !important;
+margin-top: 0% !important;
+width: 100% !important;
+
+}
+.f-info-socials a{
+    text-decoration: none;
+   color: black;
+   font-size: 1.5rem;
+}
+.f-info-brand{
+    font-size: 1.25rem;
+}
+.f-info a{ 
+    text-decoration: none;
+    color:black;
+    margin-right: 10px;
+}
+.f-info a:hover{ 
+    text-decoration: underline;
+    color:black;
+}
+.img-fluid{
+    height:24rem !important;
+    width:100% !important;
+    object-fit: cover;
+
+}
+.listing-card {
+  border: none !important;
+  background-color: transparent;
+}
+.listing-card img,
+.detail-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.listing-card img {
+  height: 20rem;
+}
+.detail-img {
+  height: 22rem;
+}
+#map {
+  height: 380px;
+  width: 100%;
+  border-radius: 0.75rem;
+}
+  
+   
+.card-img-overlay{
+    opacity:0;
+}
+.card-img-overlay:hover{
+    background-color: #cbcbcb;
+    opacity:0.3;
+}
+.add-btn, .update-btn, .edit-btn{
+  
+    background-color:rgb(246, 51, 51) !important;
+}
+
+#filters{
+  display: flex;
+  flex-wrap: wrap;
+    align-items: center;
+  }
+  #filter{
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    opacity: 0.7;
+  }
+  #filter:hover{
+    opacity: 1;
+  }
+  #filter p{
+    font-size: 0.8rem;
+  }
+  .tax-info{
+   display:none;
+  }
+  #toggle-switch{
+   
+    border: 1px solid black;
+    height: 3rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+  }
+  .search-input{
+    margin-left: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 20rem;
+  }
+  .search-btn{
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: rgb(246, 51, 51) !important;
+    color: white;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
