@@ -1,2 +1,2 @@
 # Airbnb-clone
-Full-stack Airbnb clone built with Node.js, Express, MongoDB, Mongoose, and EJS in MVC format, featuring CRUD listings, auth/sessions, Joi validation, star ratings, and Mapbox location maps.
+An Airbnb-inspired web application built with JavaScript, HTML, CSS, Node.js, Express, MongoDB, and Mongoose following the MVC architecture. It supports full CRUD operations on listings, user authentication and authorization with sessions and cookies, Joi request validation, star-rated reviews, and interactive Mapbox maps driven by listing location and country. Currently tailored for desktop screens, with search and category filters implemented on the UI side.
